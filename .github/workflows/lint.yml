@@ -9,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: clone code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: node js setup
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
       - name: run inter usinf npx
         run: npx --yes eslint@latest .
   
