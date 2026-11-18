@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: clone code
-        uses: actions/checkout@5
+        uses: actions/checkout@4
       - name: node js setup
         uses: actions/setup-node@v4
       - name: run inter usinf npx
