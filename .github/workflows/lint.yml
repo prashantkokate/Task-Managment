@@ -3,15 +3,13 @@ name: Auto Linter
 on:
   push:
     branches: main
-  
-    
 
 jobs:
   code-linting:
     runs-on: ubuntu-latest
     steps:
       - name: clone code
-        uses: actions/checkout@4
+        uses: actions/checkout@v4
       - name: node js setup
         uses: actions/setup-node@v4
       - name: run inter usinf npx
