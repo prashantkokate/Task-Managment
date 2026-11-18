@@ -2,7 +2,9 @@ name: Auto Linter
 
 on:
   push:
-    paths: "*.js"
+    branches: main
+  
+    
 
 jobs:
   code-linting:
