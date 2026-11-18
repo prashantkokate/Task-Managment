@@ -1,1 +1,19 @@
+name: Auto Linter
+
+on:
+  push:
+    paths: "*.js"
+
+jobs:
+  code-linting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: clone code
+        uses: actions/checkout@7
+      - name: node js setup
+        uses: actions/setup-node@v4
+      - name: run inter usinf npx
+        run: npx --yes eslint@latest .
+  
+  
 
