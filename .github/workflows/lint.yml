@@ -1,19 +1,19 @@
-name: start new node app
-
+name: besic node ci
 on:
   push:
     branches: main
-
+  pull_request:
+    branches: main
 jobs:
-  code-linting:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - name: clone code
+      - name: code setup
         uses: actions/checkout@v6
-      - name: node js setup
-        uses: actions/setup-node@v7
-      - name: install packeges
-        run:  npm install 
-  
-  
+      - name: node setup
+        uses: actions/setup-node@v4
+        with:
+          node-versions: "22"
+    
+      
 
