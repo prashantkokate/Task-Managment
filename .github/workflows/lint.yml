@@ -1,4 +1,4 @@
-name: Auto Linter
+name: start new node app
 
 on:
   push:
@@ -12,10 +12,8 @@ jobs:
         uses: actions/checkout@v6
       - name: node js setup
         uses: actions/setup-node@v7
-      - name: installl eslint
-        run:  npm install eslint
-      - name: run inter usinf npx
-        run: npx --yes eslint@latest .
+      - name: install packeges
+        run:  npm install 
   
   
 
