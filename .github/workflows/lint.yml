@@ -12,6 +12,8 @@ jobs:
       - name: docker-setup
         uses: docker/login-action@v4
         with:
+          echo "Triggered by: ${{ vars.DOCKERHUB_USERNAME }}"
+          echo "Branch: ${{ secrets.DOCKETHUB_TOKEN }}"
           username: ${{ vars.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKETHUB_TOKEN }}
             
